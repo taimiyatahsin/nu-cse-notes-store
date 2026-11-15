@@ -1,14 +1,20 @@
 # 🌿 NU CSE Notes Store
 
-A free, organized learning space for first-semester CSE students of National University, Bangladesh.
+A free, organized learning space for Computer Science and Engineering students of National University, Bangladesh.
 
-Study concise CSE notes focused on key definitions, core concepts, formulas, derivations and university examination preparation.
+The academic syllabus reference on this site now records the **complete four-year, eight-semester CSE Honours syllabus** supplied as a National University document effective from the 2017–2018 session. The study notes currently published here focus mainly on First Semester; the syllabus overview shows the full programme structure.
 
 <div class="grid cards" markdown>
 
+-   :material-school: **Complete CSE Syllabus**
+
+    Browse all eight semesters, course codes, titles, credit hours and the optional-course structure.
+
+    [Open the complete syllabus](syllabus/index.md)
+
 -   :material-book-open-variant: **First-Semester Subject Notes**
 
-    Chapter notes, important definitions, formulas, solved problems and exam preparation for all first-semester courses.
+    Chapter notes, important definitions, formulas, solved problems and exam preparation for the currently published first-semester subjects.
 
     [SPL](subjects/spl/index.md) · [SPL Lab](subjects/spl-lab/index.md) · [EEC](subjects/eec/index.md) · [EEC Lab](subjects/eec-lab/index.md) · [Calculus](subjects/cal/index.md) · [Physics](subjects/phy/index.md) · [English](subjects/eng/index.md)
 
@@ -54,28 +60,24 @@ Study concise CSE notes focused on key definitions, core concepts, formulas, der
 
     [Open My Library](tools/bookmarks.md)
 
--   :material-school: **Academic Syllabus**
-
-    Review the recorded first-semester course list and syllabus references.
-
-    [Open syllabus](syllabus/index.md)
-
 </div>
 
 ---
 
-## First-semester subjects
+## CSE programme at a glance
 
-| Subject | Course Code | Credits |
-|---|---:|---:|
-| Structured Programming Language | 510201 | 3.0 |
-| Structured Programming Language Lab | 510202 | 1.5 |
-| Electrical and Electronic Circuit | 510203 | 3.0 |
-| Electrical and Electronic Circuit Lab | 510204 | 1.5 |
-| Calculus | 510205 | 3.0 |
-| Physics | 510207 | 3.0 |
-| English | 510209 | 3.0 |
-| **Total in the recorded syllabus reference** |  | **18.0** |
+| Year | Semester | Credits in the supplied syllabus |
+|---|---|---:|
+| First Year | I | 18.0 |
+| First Year | II | 16.5 |
+| Second Year | III | 18.0 |
+| Second Year | IV | 16.5 |
+| Third Year | V | 16.5 |
+| Third Year | VI | 16.5 |
+| Fourth Year | VII | 18.0 |
+| Fourth Year | VIII | 18.0 |
+
+Semester VIII includes compulsory major theory courses, a Project/Industry Attachment, and one optional theory course with its corresponding optional lab. See the [full course-by-course list and source notes](syllabus/index.md).
 
 ## Search, save and study offline
 
@@ -93,16 +95,12 @@ For offline access, open important pages while connected to the internet first. 
 
 ## Academic reference note
 
-The course list shown here is transcribed from the NU CSE (Honours) syllabus reference titled **“Computer Science and Engineering, CSE (Hon's) Syllabus 2017–2018.”** National University lists this title in its official **Syllabus (Professionals)** archive, with a publication date of 31 October 2018. The archive listing confirms that the document exists; it does **not**, by itself, confirm that the 2017–2018 syllabus remains the applicable version for every later admission session.
+The complete syllabus reference used for the programme overview is the user-supplied PDF titled **“CSE Syllabus – Effective from the Session 2017–2018”**, identifying the National University Department of Computer Science and Engineering and the Four Year B.Sc. Honours Course. The uploaded document contains First Year through Fourth Year and Semesters I–VIII.
 
-- **Official source:** [National University — Syllabus (Professionals)](https://www.nu.ac.bd/syllabus-professionals.php). Search the archive for the CSE (Hon's) 2017–2018 entry.
-- **Accessible syllabus copy:** [CSE First Year syllabus PDF hosted by BIST](https://bist.ac.bd/storage/1645259906_Computer%20Science%20and%20Engineering%201st%20Year_Pub_Date_15092019.pdf). This is a third-party-hosted copy, not the NU website itself.
-- **Current-session verification:** Students should confirm the syllabus, course list, marks distribution and examination scope for their own admission session with their department and the latest NU notices.
+National University also lists **“Computer Science and Engineering, CSE (Hon's) Syllabus 2017–2018”** in its official [Syllabus (Professionals) archive](https://www.nu.ac.bd/syllabus-professionals.php). The archive listing supports the existence of the 2017–2018 syllabus reference; it does **not**, by itself, establish that the same syllabus remains applicable to every later admission session.
 
-The notes on this website are independent study materials prepared from syllabus references, class materials and standard subject knowledge. They are not official NU publications. Uploaded teacher/class notes are identified as learning sources where relevant. Original practice questions are written for revision and are **not** represented as verified NU previous-year questions. Question-bank scans or student-uploaded papers remain secondary sources unless an official NU source is explicitly identified.
+- **Document basis:** the complete 47-page syllabus PDF supplied for this study resource.
+- **Official archive:** [National University — Syllabus (Professionals)](https://www.nu.ac.bd/syllabus-professionals.php).
+- **Session applicability:** confirm the approved syllabus, course list, marks distribution and examination scope for your own admission batch with your department and the latest NU notices. A later session-specific or revised document takes priority.
 
----
-
-**Learn at your own pace. Build your skills. Keep growing.**
-
-*Study, practise, and build your CSE foundations step by step.*
+The notes on this website are independent study materials prepared from syllabus references, class materials and standard subject knowledge. They are not official NU publications. The published subject notes currently cover First Semester; listing later-semester courses does not mean detailed notes for every course are already available. Original practice questions are written for revision and are **not** represented as verified NU previous-year questions.
