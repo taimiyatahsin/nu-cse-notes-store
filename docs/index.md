@@ -93,9 +93,13 @@ For offline access, open important pages while connected to the internet first. 
 
 ## Academic reference note
 
-The course list and several topic outlines are organized using the NU CSE syllabus reference effective from Session 2017–2018. This repository does not independently establish that this is the latest revision. Confirm the applicable syllabus and examination scope with your department.
+The course list shown here is transcribed from the NU CSE (Honours) syllabus reference titled **“Computer Science and Engineering, CSE (Hon's) Syllabus 2017–2018.”** National University lists this title in its official **Syllabus (Professionals)** archive, with a publication date of 31 October 2018. The archive listing confirms that the document exists; it does **not**, by itself, confirm that the 2017–2018 syllabus remains the applicable version for every later admission session.
 
-Question-bank links and student-uploaded papers are secondary sources unless an official source is explicitly identified. Practice questions written for this site are not presented as verified past questions.
+- **Official source:** [National University — Syllabus (Professionals)](https://www.nu.ac.bd/syllabus-professionals.php). Search the archive for the CSE (Hon's) 2017–2018 entry.
+- **Accessible syllabus copy:** [CSE First Year syllabus PDF hosted by BIST](https://bist.ac.bd/storage/1645259906_Computer%20Science%20and%20Engineering%201st%20Year_Pub_Date_15092019.pdf). This is a third-party-hosted copy, not the NU website itself.
+- **Current-session verification:** Students should confirm the syllabus, course list, marks distribution and examination scope for their own admission session with their department and the latest NU notices.
+
+The notes on this website are independent study materials prepared from syllabus references, class materials and standard subject knowledge. They are not official NU publications. Uploaded teacher/class notes are identified as learning sources where relevant. Original practice questions are written for revision and are **not** represented as verified NU previous-year questions. Question-bank scans or student-uploaded papers remain secondary sources unless an official NU source is explicitly identified.
 
 ---
 
