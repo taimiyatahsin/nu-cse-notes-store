@@ -2,7 +2,7 @@
 
 This page records the **complete four-year, eight-semester course structure** from the supplied National University Department of Computer Science and Engineering syllabus PDF.
 
-<badge color="success">Complete programme structure recorded</badge>
+**Coverage:** Four years · Eight semesters · Complete course structure
 
 **Document title:** CSE Syllabus — Effective from the Session 2017–2018  
 **Programme:** Four Year B.Sc. Honours Course  
