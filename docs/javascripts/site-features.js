@@ -137,7 +137,8 @@
     button.className="md-button md-button--primary";
     button.textContent="Back";
     button.addEventListener("click",()=>{
-      if(safeURL(document.referrer)){history.back();return;}
+            const previous=safeURL(document.referrer);
+      if(previous&&!/[.](?:css|js|json|svg|png|jpe?g|webp|ico)$/i.test(new URL(previous).pathname)){history.back();return;}
       const parts=location.pathname.slice(BASE.pathname.length).split("/").filter(Boolean);
       parts.pop();
       location.assign(new URL(parts.length?parts.join("/")+"/":"",BASE));
