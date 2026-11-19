@@ -56,7 +56,21 @@ No personal PDFs added yet.
 
 ### English (510209)
 
-No personal PDFs added yet.
+**Uploaded English resources (13 PDFs)**
+
+- **Completing Sentence** · [View PDF](../pdfs/semester-1/eng/Completing_sentence.pdf){ target=_blank } · [Download PDF](../pdfs/semester-1/eng/Completing_sentence.pdf){ download="Completing_sentence.pdf" }
+- **Correction** · [View PDF](../pdfs/semester-1/eng/correction.pdf){ target=_blank } · [Download PDF](../pdfs/semester-1/eng/correction.pdf){ download="correction.pdf" }
+- **English Grammar & Composition — Md Edrich Molla** · [View PDF](../pdfs/semester-1/eng/English%20Grammar%20%26%20Composition%20-%20Md%20Edrich%20Molla.pdf){ target=_blank } · [Download PDF](../pdfs/semester-1/eng/English%20Grammar%20%26%20Composition%20-%20Md%20Edrich%20Molla.pdf){ download="English Grammar & Composition - Md Edrich Molla.pdf" }
+- **Final Exam English Composition Guide (12 Paragraphs & 18 Essays)** · [View PDF](../pdfs/semester-1/eng/Final%20Exam%20English%20Composition%20Guide%20%2812%20Paragraphs%20%26%2018%20Essays%29.pdf){ target=_blank } · [Download PDF](../pdfs/semester-1/eng/Final%20Exam%20English%20Composition%20Guide%20%2812%20Paragraphs%20%26%2018%20Essays%29.pdf){ download="Final Exam English Composition Guide (12 Paragraphs & 18 Essays).pdf" }
+- **Five Forms of Verb** · [View PDF](../pdfs/semester-1/eng/five_forms_of_verb.pdf){ target=_blank } · [Download PDF](../pdfs/semester-1/eng/five_forms_of_verb.pdf){ download="five_forms_of_verb.pdf" }
+- **Idiom and Phrases — MD Edrich Molla** · [View PDF](../pdfs/semester-1/eng/Idiom%20and%20Phrases%20by%20MD%20EDRICH%20MOLLA%20.pdf){ target=_blank } · [Download PDF](../pdfs/semester-1/eng/Idiom%20and%20Phrases%20by%20MD%20EDRICH%20MOLLA%20.pdf){ download="Idiom and Phrases by MD EDRICH MOLLA .pdf" }
+- **Job Letter** · [View PDF](../pdfs/semester-1/eng/job_letter.pdf){ target=_blank } · [Download PDF](../pdfs/semester-1/eng/job_letter.pdf){ download="job_letter.pdf" }
+- **Letter Writing** · [View PDF](../pdfs/semester-1/eng/letter_writting.pdf){ target=_blank } · [Download PDF](../pdfs/semester-1/eng/letter_writting.pdf){ download="letter_writting.pdf" }
+- **Right Form of Verb** · [View PDF](../pdfs/semester-1/eng/right_form_of_verb.pdf){ target=_blank } · [Download PDF](../pdfs/semester-1/eng/right_form_of_verb.pdf){ download="right_form_of_verb.pdf" }
+- **Rules of Correction Part 2** · [View PDF](../pdfs/semester-1/eng/rules_of_correction_part_2.pdf){ target=_blank } · [Download PDF](../pdfs/semester-1/eng/rules_of_correction_part_2.pdf){ download="rules_of_correction_part_2.pdf" }
+- **Rules of Right Form of Verb** · [View PDF](../pdfs/semester-1/eng/rules_of_right_form_of_verb.pdf){ target=_blank } · [Download PDF](../pdfs/semester-1/eng/rules_of_right_form_of_verb.pdf){ download="rules_of_right_form_of_verb.pdf" }
+- **Verb** · [View PDF](../pdfs/semester-1/eng/verb.pdf){ target=_blank } · [Download PDF](../pdfs/semester-1/eng/verb.pdf){ download="verb.pdf" }
+- **WH Question** · [View PDF](../pdfs/semester-1/eng/WH_question.pdf){ target=_blank } · [Download PDF](../pdfs/semester-1/eng/WH_question.pdf){ download="WH_question.pdf" }
 
 **PDF actions:** The **View PDF** link opens the browser's built-in PDF viewer in a new tab. The **Download PDF** link requests a local download. Browser settings may affect whether a PDF opens or downloads automatically.
 
