@@ -32,3 +32,11 @@
 ---
 
 *Study note prepared for beginner-level first-semester English practice. Follow the exact question instructions, word limit and teacher's preferred format in examinations.*
+
+
+## PDF resources
+
+- **Five forms of verbs:** [View PDF](../../pdfs/semester-1/eng/five_forms_of_verb.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/eng/five_forms_of_verb.pdf){ download="five_forms_of_verb.pdf" }
+- **Right form of verbs:** [View PDF](../../pdfs/semester-1/eng/right_form_of_verb.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/eng/right_form_of_verb.pdf){ download="right_form_of_verb.pdf" }
+- **Rules for right form of verbs:** [View PDF](../../pdfs/semester-1/eng/rules_of_right_form_of_verb.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/eng/rules_of_right_form_of_verb.pdf){ download="rules_of_right_form_of_verb.pdf" }
+- **Verb notes:** [View PDF](../../pdfs/semester-1/eng/verb.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/eng/verb.pdf){ download="verb.pdf" }
