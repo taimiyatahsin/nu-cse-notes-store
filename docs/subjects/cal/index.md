@@ -174,5 +174,7 @@ The repository follows this published syllabus copy. It is not a guarantee that 
 
 ## My PDF Notes
 
-Your personal PDF notes for this subject will appear here. [Browse the All PDFs Library](../../tools/pdf-library.md) to find available files or learn where to upload new ones.
+- **Important Rules** · [View PDF](../../pdfs/semester-1/calculus/importentes_rules.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/calculus/importentes_rules.pdf){ download="importentes_rules.pdf" }
+
+[Browse the All PDFs Library](../../tools/pdf-library.md) for other available files.
 
