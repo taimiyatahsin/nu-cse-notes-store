@@ -25,3 +25,8 @@
 ---
 
 *Study note prepared for beginner-level first-semester English practice. Follow the exact question instructions, word limit and teacher's preferred format in examinations.*
+
+
+## PDF resources
+
+- **General grammar reference:** [View English Grammar & Composition — Md Edrich Molla](../../pdfs/semester-1/eng/English%20Grammar%20%26%20Composition%20-%20Md%20Edrich%20Molla.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/eng/English%20Grammar%20%26%20Composition%20-%20Md%20Edrich%20Molla.pdf){ download="English Grammar & Composition - Md Edrich Molla.pdf" }
