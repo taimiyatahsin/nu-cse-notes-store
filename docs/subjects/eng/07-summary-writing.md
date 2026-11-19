@@ -19,3 +19,8 @@
 ---
 
 *Study note prepared for beginner-level first-semester English practice. Follow the exact question instructions, word limit and teacher's preferred format in examinations.*
+
+
+## PDF resources
+
+No summary-specific PDF was in the uploaded English folder. [Browse the English PDF library](../../tools/pdf-library.md#english-510209) for supplementary materials.
