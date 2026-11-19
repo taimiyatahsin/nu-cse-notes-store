@@ -2,6 +2,9 @@
 description: "Browse personal PDF notes for NU CSE first-semester subjects and learn how to add new files."
 ---
 
+[Back](../index.md)
+
+
 # All PDFs Library
 
 A central collection of PDF notes created and added for the NU CSE Notes Store. PDFs are grouped by semester and subject. Open a file in your browser or download a copy for offline study.
