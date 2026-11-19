@@ -175,6 +175,12 @@ The repository follows this published syllabus copy. It is not a guarantee that 
 ## My PDF Notes
 
 - **Important Rules** · [View PDF](../../pdfs/semester-1/calculus/importentes_rules.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/calculus/importentes_rules.pdf){ download="importentes_rules.pdf" }
+- **Calculastheorem** · [View PDF](../../pdfs/semester-1/calculus/Calculastheorem.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/calculus/Calculastheorem.pdf){ download="Calculastheorem.pdf" }
+- **Calculus_Limit_Notes** · [View PDF](../../pdfs/semester-1/calculus/Calculus_Limit_Notes.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/calculus/Calculus_Limit_Notes.pdf){ download="Calculus_Limit_Notes.pdf" }
+- **calculus_Question** · [View PDF](../../pdfs/semester-1/calculus/calculus_Question.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/calculus/calculus_Question.pdf){ download="calculus_Question.pdf" }
+- **Chapter 9^M1 basic_260917_204611** · [View PDF](../../pdfs/semester-1/calculus/Chapter%209%5EM1%20basic_260917_204611.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/calculus/Chapter%209%5EM1%20basic_260917_204611.pdf){ download="Chapter 9^M1 basic_260917_204611.pdf" }
+- **M1 C10 BASIC F_260917_204531** · [View PDF](../../pdfs/semester-1/calculus/M1%20C10%20BASIC%20F_260917_204531.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/calculus/M1%20C10%20BASIC%20F_260917_204531.pdf){ download="M1 C10 BASIC F_260917_204531.pdf" }
+- **TRIGONMETRY Sheet final cor_260917_204630** · [View PDF](../../pdfs/semester-1/calculus/TRIGONMETRY%20Sheet%20final%20cor_260917_204630.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/calculus/TRIGONMETRY%20Sheet%20final%20cor_260917_204630.pdf){ download="TRIGONMETRY Sheet final cor_260917_204630.pdf" }
 
 [Browse the All PDFs Library](../../tools/pdf-library.md) for other available files.
 
