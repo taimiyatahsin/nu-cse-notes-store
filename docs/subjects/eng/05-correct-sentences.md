@@ -29,3 +29,10 @@
 ---
 
 *Study note prepared for beginner-level first-semester English practice. Follow the exact question instructions, word limit and teacher's preferred format in examinations.*
+
+
+## PDF resources
+
+- **Correction practice:** [View PDF](../../pdfs/semester-1/eng/correction.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/eng/correction.pdf){ download="correction.pdf" }
+- **Rules of correction, Part 2:** [View PDF](../../pdfs/semester-1/eng/rules_of_correction_part_2.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/eng/rules_of_correction_part_2.pdf){ download="rules_of_correction_part_2.pdf" }
+- **General grammar reference:** [View English Grammar & Composition — Md Edrich Molla](../../pdfs/semester-1/eng/English%20Grammar%20%26%20Composition%20-%20Md%20Edrich%20Molla.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/eng/English%20Grammar%20%26%20Composition%20-%20Md%20Edrich%20Molla.pdf){ download="English Grammar & Composition - Md Edrich Molla.pdf" }
