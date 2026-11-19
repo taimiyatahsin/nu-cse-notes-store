@@ -27,3 +27,8 @@ A Customer
 ---
 
 *Study note prepared for beginner-level first-semester English practice. Follow the exact question instructions, word limit and teacher's preferred format in examinations.*
+
+
+## PDF resources
+
+No complaint-specific PDF was in the uploaded English folder. The general [letter-writing reference PDF](../../pdfs/semester-1/eng/letter_writting.pdf){ target=_blank } may be useful for format; [browse the English PDF library](../../tools/pdf-library.md#english-510209) for other materials.
