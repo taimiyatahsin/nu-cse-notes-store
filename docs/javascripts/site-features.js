@@ -80,7 +80,7 @@
   }
   function setupLibrary(){
     const grid=$("#notes-library-grid");if(!grid)return;const search=$("#library-search"),subject=$("#library-subject"),type=$("#library-type"),count=$("#library-count"),empty=$("#library-empty"),cards=Array.from(grid.querySelectorAll("li"));
-    function apply(){const q=(search.value||"").toLowerCase().trim(),s=subject.value,t=type.value;let visible=0;cards.forEach(card=>{const m=card.querySelector(".library-tags"),hay=(card.textContent+" "+(m?.dataset.search||"")).toLowerCase(),ok=(!q||hay.includes(q))&&(s==="all"||m?.dataset.subject===s)&&(t==="all"||m?.dataset.type===t);card.hidden=!ok;if(ok)visible++;});count.textContent="Showing "+visible+" of "+cards.length+" resources";empty.hidden=visible>0;}
+    function apply(){const q=(search.value||"").toLowerCase().trim(),s=subject.value,t=type.value;let visible=0;cards.forEach(card=>{const m=card.querySelector(".library-tags"),hay=(card.textContent+" "+(m?.dataset.search||"")).toLowerCase(),ok=(!q||hay.includes(q))&&(s==="all"||m?.dataset.subject===s)&&(t==="all"||m?.dataset.type?.split(/\s+/).includes(t));card.hidden=!ok;if(ok)visible++;});count.textContent="Showing "+visible+" of "+cards.length+" resources";empty.hidden=visible>0;}
     search.addEventListener("input",apply);subject.addEventListener("change",apply);type.addEventListener("change",apply);apply();
   }
   function setupBackup(){
