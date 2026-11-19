@@ -43,7 +43,9 @@ A central collection of PDF notes created and added for the NU CSE Notes Store. 
 
 ### Calculus (510205)
 
-No personal PDFs added yet.
+**Uploaded Calculus resources (1 PDF)**
+
+- **Important Rules** · [View PDF](../pdfs/semester-1/calculus/importentes_rules.pdf){ target=_blank } · [Download PDF](../pdfs/semester-1/calculus/importentes_rules.pdf){ download="importentes_rules.pdf" }
 
 ### Physics (510207)
 
@@ -78,9 +80,3 @@ No personal PDFs added yet.
 
 *This library contains student-created study materials. Check course scope and academic requirements against the syllabus confirmed by your department.*
 
-### Calculus (510205)
-
-
-**Uploaded Calculus resources (1 PDF)**
-
-- **Important Rules** · [View PDF](../pdfs/semester-1/calculus/importentes_rules.pdf){ target=_blank } · [Download PDF](../pdfs/semester-1/calculus/importentes_rules.pdf){ download="importentes_rules.pdf" }
