@@ -1,13 +1,13 @@
 
 :root {
-  --forest: #7a1f43;
-  --forest-dark: #4f142d;
-  --sage: #d58ba7;
-  --cream: #fff7fa;
+  --forest: #2f6b4f;
+  --forest-dark: #204936;
+  --sage: #a8cfb3;
+  --cream: #f5faf6;
   --paper: #ffffff;
-  --ink: #35232c;
-  --muted: #806d76;
-  --line: #eedde5;
+  --ink: #23352a;
+  --muted: #65776b;
+  --line: #d8e6dc;
 }
 
 [data-md-color-scheme="default"] {
@@ -274,10 +274,10 @@ body {
 
 /* Dark theme palette */
 [data-md-color-scheme="slate"] {
-  --forest: #e9b5c9; --forest-dark: #f3d9e3; --sage: #c77c9b; --cream: #191218;
-  --paper: #251a21; --ink: #f1e7ec; --muted: #c0aeb7; --line: #493540;
+  --forest: #a8cfb3; --forest-dark: #e4f1e7; --sage: #6da982; --cream: #14251b;
+  --paper: #1f3226; --ink: #e8f1e9; --muted: #b9c9bd; --line: #314737;
   --md-default-bg-color: var(--cream); --md-default-fg-color: var(--ink);
-  --md-primary-fg-color: #54172f; --md-primary-fg-color--dark: #3d1022; --md-accent-fg-color: #e4a0b8;
+  --md-primary-fg-color: #204936; --md-primary-fg-color--dark: #153524; --md-accent-fg-color: #95c3a2;
 }
 [data-md-color-scheme="slate"] body,[data-md-color-scheme="slate"] .md-main,[data-md-color-scheme="slate"] .md-content { background:var(--cream); }
 [data-md-color-scheme="slate"] .md-typeset h1,[data-md-color-scheme="slate"] .md-typeset h2,[data-md-color-scheme="slate"] .md-typeset h3,[data-md-color-scheme="slate"] .cgpa-result-card strong,[data-md-color-scheme="slate"] .cgpa-semester-summary strong,[data-md-color-scheme="slate"] .cgpa-overall-card strong { color:var(--forest-dark); }
