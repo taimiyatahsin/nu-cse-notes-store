@@ -41,7 +41,7 @@ Find study notes, chapter guides, laboratory materials and revision resources in
 
 -   **Structured Programming Language**
 
-    <span class="library-tags" data-subject="spl" data-type="subject" data-search="C programming algorithms pseudocode flowchart">510201 · Subject notes</span>
+    <span class="library-tags" data-subject="spl" data-type="subject chapter revision" data-search="C programming algorithms pseudocode flowchart">510201 · Subject notes</span>
 
     [Open subject](../subjects/spl/index.md) · [Exam revision](../subjects/spl/exam-revision-guide.md) · [Algorithms and flowcharts](../subjects/spl/algorithm-flowchart-pseudocode.md)
 
@@ -53,7 +53,7 @@ Find study notes, chapter guides, laboratory materials and revision resources in
 
 -   **Electrical and Electronic Circuit**
 
-    <span class="library-tags" data-subject="eec" data-type="subject" data-search="AC circuits network theorems semiconductors diodes transistors">510203 · Subject notes</span>
+    <span class="library-tags" data-subject="eec" data-type="subject chapter" data-search="AC circuits network theorems semiconductors diodes transistors">510203 · Subject notes</span>
 
     [Open subject](../subjects/eec/index.md) · [AC fundamentals](../subjects/eec/chapter-01-ac-fundamentals.md) · [Network theorems](../subjects/eec/chapter-02-network-theorems.md) · [Semiconductor diodes](../subjects/eec/chapter-04-semiconductor-diodes.md)
 
@@ -65,19 +65,19 @@ Find study notes, chapter guides, laboratory materials and revision resources in
 
 -   **Calculus**
 
-    <span class="library-tags" data-subject="calculus" data-type="subject" data-search="functions limits continuity differentiation integration calculus">510205 · Subject notes</span>
+    <span class="library-tags" data-subject="calculus" data-type="subject chapter revision" data-search="functions limits continuity differentiation integration calculus">510205 · Subject notes</span>
 
     [Open subject](../subjects/cal/index.md) · [Functions](../subjects/cal/chapter-01-functions-and-their-graphs.md) · [Limits](../subjects/cal/chapter-02-limits-of-functions.md) · [Differentiation](../subjects/cal/chapter-04-differentiation.md) · [Exam revision](../subjects/cal/exam-revision-guide.md)
 
 -   **Physics**
 
-    <span class="library-tags" data-subject="physics" data-type="subject" data-search="electrostatics current electricity magnetism induction physics">510207 · Subject notes</span>
+    <span class="library-tags" data-subject="physics" data-type="subject chapter revision" data-search="electrostatics current electricity magnetism induction physics">510207 · Subject notes</span>
 
     [Open subject](../subjects/phy/index.md) · [Electrostatics](../subjects/phy/chapter-01-electrostatics-and-capacitance.md) · [Electric current](../subjects/phy/chapter-02-electric-current-and-circuits.md) · [Magnetic fields](../subjects/phy/chapter-03-magnetic-fields-and-force.md)
 
 -   **English**
 
-    <span class="library-tags" data-subject="english" data-type="subject" data-search="reading comprehension grammar articles verbs conjunctions paragraph writing">510209 · Subject notes</span>
+    <span class="library-tags" data-subject="english" data-type="subject chapter revision" data-search="reading comprehension grammar articles verbs conjunctions paragraph writing">510209 · Subject notes</span>
 
     [Open subject](../subjects/eng/index.md) · [Reading comprehension](../subjects/eng/01-reading-comprehension.md) · [Articles](../subjects/eng/02-articles.md) · [Paragraph writing](../subjects/eng/06-paragraph-writing.md) · [Midterm preparation](../subjects/eng/midterm-exam-preparation.md)
 
