@@ -127,6 +127,23 @@
     const input=$("#__search");if(input){input.addEventListener("change",()=>saveSearch(input));input.addEventListener("keydown",e=>{if(e.key==="Enter")saveSearch(input);});}
   }
   function saveSearch(input){const q=input.value.trim();if(q.length<2)return;const old=read(RECENT_KEY,[]),next=[q,...(Array.isArray(old)?old:[]).filter(x=>x!==q)].slice(0,8);write(RECENT_KEY,next);}
-  function init(){createUtility();renderBookmarksPage();setupLibrary();setupBackup();setupPWA();setupShortcuts();loadSearchDocuments();window.addEventListener("storage",()=>{updateBookmarks();renderBookmarksPage();});}
-  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+  function init(){createUtility();renderBookmarksPage();setupLibrary();setupBackup();setupPWA();setupShortcuts();loadSearchDocuments();addChapterBackButton();window.addEventListener("storage",()=>{updateBookmarks();renderBookmarksPage();});}
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();  function addChapterBackButton(){
+    const content=$(".md-content");
+    if(!content||!location.pathname.includes("/subjects/")||$("#site-chapter-back"))return;
+    const button=document.createElement("button");
+    button.type="button";
+    button.id="site-chapter-back";
+    button.className="md-button md-button--primary";
+    button.textContent="Back";
+    button.addEventListener("click",()=>{
+      if(safeURL(document.referrer)){history.back();return;}
+      const parts=location.pathname.slice(BASE.pathname.length).split("/").filter(Boolean);
+      parts.pop();
+      location.assign(new URL(parts.length?parts.join("/")+"/":"",BASE));
+    });
+    content.insertBefore(button,content.firstChild);
+  }
+  addChapterBackButton();
+
 })();
