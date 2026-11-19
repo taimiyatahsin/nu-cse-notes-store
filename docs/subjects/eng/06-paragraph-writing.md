@@ -21,3 +21,8 @@ Time management is an essential skill for students. It helps them use their limi
 ---
 
 *Study note prepared for beginner-level first-semester English practice. Follow the exact question instructions, word limit and teacher's preferred format in examinations.*
+
+
+## PDF resources
+
+- **Final Exam English Composition Guide (12 Paragraphs & 18 Essays):** [View PDF](../../pdfs/semester-1/eng/Final%20Exam%20English%20Composition%20Guide%20%2812%20Paragraphs%20%26%2018%20Essays%29.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/eng/Final%20Exam%20English%20Composition%20Guide%20%2812%20Paragraphs%20%26%2018%20Essays%29.pdf){ download="Final Exam English Composition Guide (12 Paragraphs & 18 Essays).pdf" }
