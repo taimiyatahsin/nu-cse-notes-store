@@ -35,3 +35,9 @@ A Student
 ---
 
 *Study note prepared for beginner-level first-semester English practice. Follow the exact question instructions, word limit and teacher's preferred format in examinations.*
+
+
+## PDF resources
+
+- **Job letter:** [View PDF](../../pdfs/semester-1/eng/job_letter.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/eng/job_letter.pdf){ download="job_letter.pdf" }
+- **Letter-writing reference:** [View PDF](../../pdfs/semester-1/eng/letter_writting.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/eng/letter_writting.pdf){ download="letter_writting.pdf" }
