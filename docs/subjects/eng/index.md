@@ -124,5 +124,15 @@ Confirm the applicable syllabus and assessment requirements with your department
 
 ## My PDF Notes
 
-Your personal PDF notes for this subject will appear here. [Browse the All PDFs Library](../../tools/pdf-library.md) to find available files or learn where to upload new ones.
+Chapter-matched PDF links are included at the end of the relevant topic notes. The uploaded files do not include a dedicated reading-comprehension, summary-writing or complaint-letter PDF; see each topic page for the available coverage.
+
+### Additional English Practice PDFs
+
+These uploaded resources cover topics outside the nine reported midterm chapters:
+
+- **Completing Sentence** · [View PDF](../../pdfs/semester-1/eng/Completing_sentence.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/eng/Completing_sentence.pdf){ download="Completing_sentence.pdf" }
+- **Idiom and Phrases — MD Edrich Molla** · [View PDF](../../pdfs/semester-1/eng/Idiom%20and%20Phrases%20by%20MD%20EDRICH%20MOLLA%20.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/eng/Idiom%20and%20Phrases%20by%20MD%20EDRICH%20MOLLA%20.pdf){ download="Idiom and Phrases by MD EDRICH MOLLA .pdf" }
+- **WH Question** · [View PDF](../../pdfs/semester-1/eng/WH_question.pdf){ target=_blank } · [Download PDF](../../pdfs/semester-1/eng/WH_question.pdf){ download="WH_question.pdf" }
+
+[Browse the full English PDF library](../../tools/pdf-library.md#english-510209) for all uploaded English resources.
 
