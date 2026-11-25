@@ -1,8 +1,8 @@
 site_name: NU CSE Notes Store
 site_description: Free CSE notes, programming practice and university examination preparation resources.
-site_url: https://taimiyatahsin0-png.github.io/nu-cse-notes-store/
-repo_url: https://github.com/taimiyatahsin0-png/nu-cse-notes-store
-repo_name: taimiyatahsin0-png/nu-cse-notes-store
+site_url: https://taimiyatahsin.github.io/nu-cse-notes-store/
+repo_url: https://github.com/taimiyatahsin/nu-cse-notes-store
+repo_name: taimiyatahsin/nu-cse-notes-store
 
 theme:
   name: material
@@ -83,9 +83,9 @@ extra_css:
 copyright: NU CSE Notes Store
 site_name: NU CSE Notes Store
 site_description: Free CSE notes, programming practice and university examination preparation resources.
-site_url: https://taimiyatahsin0-png.github.io/nu-cse-notes-store/
-repo_url: https://github.com/taimiyatahsin0-png/nu-cse-notes-store
-repo_name: taimiyatahsin0-png/nu-cse-notes-store
+site_url: https://taimiyatahsin.github.io/nu-cse-notes-store/
+repo_url: https://github.com/taimiyatahsin/nu-cse-notes-store
+repo_name: taimiyatahsin/nu-cse-notes-store
 
 theme:
   name: material
