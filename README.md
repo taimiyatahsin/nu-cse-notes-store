@@ -2,8 +2,8 @@
 
 A free, chapter-wise learning and practice website for first-semester CSE students of National University, Bangladesh.
 
-**Live website:** https://taimiyatahsin0-png.github.io/nu-cse-notes-store/  
-**Repository:** https://github.com/taimiyatahsin0-png/nu-cse-notes-store
+**Live website:** https://taimiyatahsin.github.io/nu-cse-notes-store/  
+**Repository:** https://github.com/taimiyatahsin/nu-cse-notes-store
 
 ## What you can find here
 
@@ -33,7 +33,7 @@ Question-bank links and student-uploaded paper copies are identified as secondar
 Requirements: Python 3 and pip.
 
 ```bash
-git clone https://github.com/taimiyatahsin0-png/nu-cse-notes-store.git
+git clone https://github.com/taimiyatahsin/nu-cse-notes-store.git
 cd nu-cse-notes-store
 pip install -r requirements.txt
 mkdocs serve
