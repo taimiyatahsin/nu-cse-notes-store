@@ -49,8 +49,8 @@ These are external learning tools. The Notes Store does not execute code inside 
 
 ## Practice repositories
 
-- [C Programming Fundamentals](https://github.com/taimiyatahsin0-png/c-programming-fundamentals)
-- [Algorithm and Flowchart Practice](https://github.com/taimiyatahsin0-png/algorithm-flowchart-practice)
+- [C Programming Fundamentals](https://github.com/taimiyatahsin/c-programming-fundamentals)
+- [Algorithm and Flowchart Practice](https://github.com/taimiyatahsin/algorithm-flowchart-practice)
 
 ## Good practice rules
 
