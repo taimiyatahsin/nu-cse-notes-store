@@ -75,6 +75,7 @@ extra_javascript:
   - javascripts/cgpa-calculator.js
   - javascripts/cgpa-advanced.js
   - javascripts/site-features-v2.js
+  - javascripts/reading-position.js
   - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
