@@ -119,3 +119,23 @@
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+/* Consistent back navigation and restored study position */
+.site-page-navigation {
+  display:flex; align-items:center; flex-wrap:wrap; gap:.55rem;
+  margin:0 0 1rem; padding:.65rem 0;
+}
+.site-page-back, .site-page-home {
+  display:inline-flex; align-items:center; justify-content:center;
+  min-height:40px; padding:.45rem .85rem; border:1px solid var(--line);
+  border-radius:9px; background:var(--paper); color:var(--md-default-fg-color);
+  font:inherit; font-size:.88rem; font-weight:700; text-decoration:none; cursor:pointer;
+}
+.site-page-back:hover, .site-page-home:hover {
+  border-color:var(--md-accent-fg-color); color:var(--md-accent-fg-color);
+}
+.site-page-navigation :focus-visible { outline:3px solid #55b8ca; outline-offset:3px; }
+@media(max-width:480px) {
+  .site-page-navigation { margin-bottom:.65rem; }
+  .site-page-back, .site-page-home { min-height:44px; }
+}
