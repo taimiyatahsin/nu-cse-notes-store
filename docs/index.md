@@ -15,6 +15,52 @@ A student-friendly academic resource hub for clear notes, practical programming,
 **Built for students:** focused explanations, readable academic notes and practical tools in one place. Use the search bar or press **Ctrl + K** to find a topic quickly.
 </div>
 
+## Official NU quick links
+
+<div class="grid cards" markdown>
+
+-   :material-login: **Professional Applicant Login**
+
+    Open the official NU admission portal. Choose **Applicant Login → Professional** to continue.
+
+    [Open NU Admission Portal](https://www.nu.ac.bd/admissions){ target="_blank" rel="noopener" }
+
+-   :material-bullhorn: **Official Admission Notices**
+
+    Check Professional programme circulars, application dates, merit lists and release-slip updates.
+
+    [View Admission Notices](https://newsite.nu.ac.bd/admission-notice.php){ target="_blank" rel="noopener" }
+
+-   :material-file-check: **Notice Search & Authenticity Check**
+
+    Search the notice title or keywords on NU's official website and compare the published title/date before trusting a shared PDF or screenshot.
+
+    [Search Official NU Notices](https://www.nu.ac.bd/find_web.php){ target="_blank" rel="noopener" }
+
+-   :material-archive-check: **NU Notice & Instruction Archive**
+
+    Browse official university notices and instructions.
+
+    [Open Notice Archive](https://newsite.nu.ac.bd/noticeinstruction.php){ target="_blank" rel="noopener" }
+
+-   :material-poll: **Professional Results**
+
+    Open the National University result portal for examination results.
+
+    [Check NU Results](https://results.nu.ac.bd/){ target="_blank" rel="noopener" }
+
+-   :material-web: **National University Website**
+
+    Main official website for university updates, services and academic information.
+
+    [Visit NU Official Website](https://www.nu.ac.bd/){ target="_blank" rel="noopener" }
+
+</div>
+
+<div class="portal-note" markdown>
+**Notice safety tip:** There is no separate notice-authentication tool linked here. To verify a notice, find the same notice on an official NU notice page and match its title, date and document details. Do not rely only on forwarded screenshots or unofficial social posts.
+</div>
+
 ## Explore the academic portal
 
 <div class="grid cards" markdown>
