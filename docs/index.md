@@ -21,15 +21,15 @@ A student-friendly academic resource hub for clear notes, practical programming,
 
 -   :material-login: **Professional Applicant Login**
 
-    Open the official NU admission portal. Choose **Applicant Login → Professional** to continue.
+    Open the official NU applicant login. Select the relevant programme/application option; availability depends on the current admission cycle.
 
-    [Open NU Admission Portal](https://www.nu.ac.bd/admissions){ target="_blank" rel="noopener" }
+    [Open NU Admission Portal](https://app.nu.edu.bd/nu-web/applicantLogin.action){ target="_blank" rel="noopener" }
 
 -   :material-bullhorn: **Official Admission Notices**
 
-    Check Professional programme circulars, application dates, merit lists and release-slip updates.
+    Check official admission circulars, application dates, merit lists and release-slip updates.
 
-    [View Admission Notices](https://newsite.nu.ac.bd/admission-notice.php){ target="_blank" rel="noopener" }
+    [View Admission Notices](https://www.nu.ac.bd/Admission-and-Registration-Cell-Notices.php){ target="_blank" rel="noopener" }
 
 -   :material-file-check: **Notice Search & Authenticity Check**
 
@@ -39,15 +39,15 @@ A student-friendly academic resource hub for clear notes, practical programming,
 
 -   :material-calendar-clock: **Exam Routine & Schedule**
 
-    Find examination schedules, routine updates, form-fill-up notices and centre-related announcements.
+    Find examination notices, published routines, form-fill-up updates and centre-related announcements.
 
-    [View Official Examination Schedule](https://newsite.nu.ac.bd/examination-schedule.php){ target="_blank" rel="noopener" }
+    [View Official Examination Schedule](https://www.nu.ac.bd/Exam-Controller-Office-Notices.php){ target="_blank" rel="noopener" }
 
 -   :material-card-account-details: **Admit Card Portal**
 
-    Open the official NU admit-card portal for admit card and examinee-sheet services. Some downloads are handled through colleges.
+    Open NU's official online-services page for admit-card-related services and instructions. Some admit-card downloads are handled through colleges.
 
-    [Open Admit Card Portal](https://www.nu.ac.bd/admit/){ target="_blank" rel="noopener" }
+    [Open Admit Card Portal](https://newsite.nu.ac.bd/?lang=bn){ target="_blank" rel="noopener" }
 
 -   :material-shield-check: **Certificate & Marksheet Verification**
 
@@ -57,9 +57,16 @@ A student-friendly academic resource hub for clear notes, practical programming,
 
 -   :material-account-school: **Student Services & Academic Applications**
 
-    Find official student login, academic applications, form fill-up and related university services.
+    Use NU's official service directory for Student Login, certificate/marksheet verification, admit-card services and academic applications.
 
     [Open NU Student Services Directory](https://newsite.nu.ac.bd/?lang=en){ target="_blank" rel="noopener" }
+
+-   :material-form-select: **Online Exam Form Fill-up**
+
+    Access the official form-fill-up area for Degree, Honours, Professional and Masters examinations.
+
+    [Open Online Form Fill-up](https://newsite.nu.ac.bd/online-form-fill-up.php?lang=en){ target="_blank" rel="noopener" }
+
 
 -   :material-archive-check: **NU Notice & Instruction Archive**
 
@@ -71,7 +78,7 @@ A student-friendly academic resource hub for clear notes, practical programming,
 
     Open the National University result portal for examination results.
 
-    [Check NU Results](https://results.nu.ac.bd/){ target="_blank" rel="noopener" }
+    [Check NU Results](http://result.nu.ac.bd){ target="_blank" rel="noopener" }
 
 -   :material-web: **National University Website**
 
