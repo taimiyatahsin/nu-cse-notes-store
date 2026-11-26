@@ -1,0 +1,121 @@
+/* NU CSE Notes Store — premium academic interface */
+:root {
+  --portal-navy: #14233b;
+  --portal-blue: #315fbd;
+  --portal-cyan: #25a6b8;
+  --portal-surface: #ffffff;
+  --portal-bg: #f4f7fc;
+  --portal-border: #e1e8f2;
+}
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #f4f7fc;
+  --md-default-fg-color: #202d42;
+  --md-primary-fg-color: #172b4d;
+  --md-primary-fg-color--dark: #10203a;
+  --md-accent-fg-color: #24a0b5;
+  --line: #e1e8f2;
+  --paper: #ffffff;
+  --ink: #202d42;
+  --muted: #64748b;
+  --forest: #315fbd;
+  --forest-dark: #172b4d;
+  --sage: #8db9df;
+  --cream: #f4f7fc;
+}
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #101a2b;
+  --md-default-fg-color: #e7edf7;
+  --md-primary-fg-color: #172b4d;
+  --md-primary-fg-color--dark: #0c1728;
+  --md-accent-fg-color: #55c3d1;
+  --line: #2b3a52;
+  --paper: #18263a;
+  --ink: #e7edf7;
+  --muted: #a8b6ca;
+  --forest: #75a9e8;
+  --forest-dark: #c6dcfa;
+  --sage: #477caa;
+  --cream: #101a2b;
+}
+.md-header { background: #14233b; }
+.md-tabs { background: #1b355a; }
+.md-main, body { background: var(--md-default-bg-color); }
+.md-content { max-width: 1080px; }
+.md-typeset { line-height: 1.78; }
+.md-typeset h1 { color: var(--md-default-fg-color); font-weight: 850; letter-spacing: -.035em; }
+.md-typeset h2 { color: var(--md-default-fg-color); font-weight: 780; letter-spacing: -.02em; }
+.md-typeset a { font-weight: 650; }
+.md-typeset .grid.cards > ul > li {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--paper);
+  box-shadow: 0 5px 20px rgba(24, 45, 76, .045);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-3px);
+  border-color: #8db9df;
+  box-shadow: 0 12px 28px rgba(24, 45, 76, .10);
+}
+.md-typeset .grid.cards > ul > li > hr { border-color: var(--line); }
+.md-typeset table:not([class]) { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.md-typeset table:not([class]) th { background: #1b355a; color: #fff; }
+.md-footer { background: #14233b; }
+.md-nav__link--active { color: var(--md-accent-fg-color) !important; font-weight: 750; }
+.md-search__form { border-radius: 12px; }
+.md-search__input { border-radius: 12px; }
+.md-button, .md-typeset .md-button { border-radius: 9px; }
+.md-typeset :focus-visible, button:focus-visible, a:focus-visible {
+  outline: 3px solid #55b8ca;
+  outline-offset: 3px;
+}
+.md-typeset .portal-hero {
+  margin: .5rem 0 1.5rem;
+  padding: clamp(1.35rem, 4vw, 2.6rem);
+  border: 1px solid rgba(141,185,223,.28);
+  border-radius: 22px;
+  color: #fff;
+  background: radial-gradient(circle at 88% 12%, rgba(58,166,190,.35), transparent 32%),
+              linear-gradient(125deg, #14233b 0%, #1c3d68 62%, #235c78 100%);
+  box-shadow: 0 16px 38px rgba(20,35,59,.16);
+}
+.md-typeset .portal-hero .eyebrow {
+  margin: 0 0 .6rem;
+  color: #a9dbe7;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.md-typeset .portal-hero h2 {
+  margin: 0 0 .65rem;
+  color: #fff;
+  font-size: clamp(1.65rem, 4vw, 2.65rem);
+  line-height: 1.15;
+}
+.md-typeset .portal-hero p { color: #e0eaf5; max-width: 760px; }
+.md-typeset .portal-hero .md-button {
+  margin: .25rem .35rem .15rem 0;
+  border-color: rgba(255,255,255,.5);
+  color: #fff;
+}
+.md-typeset .portal-hero .md-button--primary {
+  border-color: #fff;
+  background: #fff;
+  color: #172b4d;
+}
+.md-typeset .portal-note {
+  padding: .85rem 1rem;
+  border: 1px solid var(--line);
+  border-left: 4px solid #3b9caf;
+  border-radius: 0 12px 12px 0;
+  background: var(--paper);
+}
+.md-typeset .portal-kicker { color: var(--muted); font-size: .9rem; }
+@media (max-width: 600px) {
+  .md-typeset .portal-hero { border-radius: 16px; }
+  .md-typeset .grid.cards > ul > li { border-radius: 13px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
