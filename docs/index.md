@@ -1,73 +1,84 @@
-# 🌿 NU CSE Notes Store
+# NU CSE Notes Store
 
-A free, organized learning space for Computer Science and Engineering students of National University, Bangladesh.
+<div class="portal-hero" markdown>
+<p class="eyebrow">National University · Computer Science & Engineering</p>
 
-The academic syllabus reference on this site now records the **complete four-year, eight-semester CSE Honours syllabus** supplied as a National University document effective from the 2017–2018 session. The study notes currently published here focus mainly on First Semester; the syllabus overview shows the full programme structure.
+## Your CSE study space, organised.
+
+A student-friendly academic resource hub for clear notes, practical programming, course references and everyday study tools. Find what you need, understand the topic, and prepare with confidence.
+
+[Explore study resources](tools/notes-library.md){ .md-button .md-button--primary }
+[Browse the syllabus](syllabus/index.md){ .md-button }
+</div>
+
+<div class="portal-note" markdown>
+**Built for students:** focused explanations, readable academic notes and practical tools in one place. Use the search bar or press **Ctrl + K** to find a topic quickly.
+</div>
+
+## Explore the academic portal
 
 <div class="grid cards" markdown>
 
--   :material-school: **Complete CSE Syllabus**
+-   :material-school-outline: **Complete CSE syllabus**
 
-    Browse all eight semesters, course codes, titles, credit hours and the optional-course structure.
+    Browse the supplied four-year, eight-semester programme structure, course codes and credit hours.
 
-    [Open the complete syllabus](syllabus/index.md)
+    [Explore syllabus](syllabus/index.md)
 
--   :material-book-open-variant: **First-Semester Subject Notes**
+-   :material-book-open-page-variant: **Subject notes**
 
-    Chapter notes, important definitions, formulas, solved problems and exam preparation for the currently published first-semester subjects.
+    Chapter-wise learning materials, definitions, formulas, solved problems and revision guides for currently published subjects.
 
-    [SPL](subjects/spl/index.md) · [SPL Lab](subjects/spl-lab/index.md) · [EEC](subjects/eec/index.md) · [EEC Lab](subjects/eec-lab/index.md) · [Calculus](subjects/cal/index.md) · [Physics](subjects/phy/index.md) · [English](subjects/eng/index.md)
+    [Open first-semester subjects](subjects/spl/index.md)
 
--   :material-calculator-variant: **CGPA Calculator**
+-   :material-calculator-variant: **CGPA calculator**
 
-    Estimate semester GPA and cumulative CGPA using course credits and grade points.
+    Estimate semester GPA and cumulative CGPA with course credits and grade points.
 
-    [Open calculator](tools/cgpa-calculator.md)
+    [Calculate CGPA](tools/cgpa-calculator.md)
 
--   :material-format-list-numbered: **NU Grade Scale**
+-   :material-code-braces: **Programming hub**
 
-    Review marks ranges, letter grades and grade points.
+    Build C programming foundations through explanations, examples and practice.
 
-    [View grade scale](tools/grade-scale.md)
+    [Start coding](tools/programming-hub.md)
 
--   :material-code-braces: **Programming Hub**
+-   :material-file-document-multiple-outline: **Question resources**
 
-    Follow the C learning path and practise problem-solving.
+    Find available question-bank and past-paper references with source labels.
 
-    [Open Programming Hub](tools/programming-hub.md)
+    [Browse questions](tools/pyq-library.md)
 
--   :material-file-document-multiple: **Question Resources**
+-   :material-function-variant: **Formula sheets**
 
-    Browse available question-bank and past-paper references with source labels.
+    Review quick-reference formulas for Calculus, Physics and Electrical and Electronic Circuits.
 
-    [Browse question resources](tools/pyq-library.md)
+    [Open formula sheets](tools/formula-sheets.md)
 
--   :material-library: **Smart Notes Library**
+-   :material-library-shelves: **Smart notes library**
 
-    Search and filter subject notes, chapter guides, lab materials and revision resources.
+    Search and filter available notes, lab materials, chapter guides and revision resources.
 
-    [Browse the library](tools/notes-library.md)
+    [Browse study library](tools/notes-library.md)
 
--   :material-function-variant: **Formula Sheets**
+-   :material-bookmark-multiple-outline: **My library & bookmarks**
 
-    Quick-reference formulas for Calculus, Physics and Electrical and Electronic Circuits.
+    Save useful pages, revisit your reading list and back up local study data.
 
-    [Explore formulas](tools/formula-sheets.md)
+    [Open my library](tools/bookmarks.md)
 
--   :material-bookmark: **My Library**
+-   :material-cellphone-arrow-down: **Study offline**
 
-    Save useful pages, revisit bookmarks and back up your local study data.
+    Learn how to install the site and prepare pages for offline reading on supported browsers.
 
-    [Open My Library](tools/bookmarks.md)
+    [Offline access guide](offline.md)
 
 </div>
 
----
-
-## CSE programme at a glance
+## The CSE programme at a glance
 
 | Year | Semester | Credits in the supplied syllabus |
-|---|---|---:|
+|---|---:|---:|
 | First Year | I | 18.0 |
 | First Year | II | 16.5 |
 | Second Year | III | 18.0 |
@@ -79,28 +90,16 @@ The academic syllabus reference on this site now records the **complete four-yea
 
 Semester VIII includes compulsory major theory courses, a Project/Industry Attachment, and one optional theory course with its corresponding optional lab. See the [full course-by-course list and source notes](syllabus/index.md).
 
-## Search, save and study offline
+## A simple way to study
 
-Use the site-wide search in the header or press **Ctrl + K** to find topics across the published notes. Bookmark useful pages to keep a personal reading list on this device. You can also switch between light and dark themes and install the site as an app on supported browsers.
+1. Choose your subject and chapter.
+2. Understand the standard definition and core concept.
+3. Follow worked examples, calculations or code traces.
+4. Attempt practice questions independently.
+5. Save useful pages and revisit topics that need more practice.
 
-For offline access, open important pages while connected to the internet first. [Read the offline access guide](offline.md).
+## Academic reference & transparency
 
-## How to study with this site
+The programme overview is based on the user-supplied National University CSE syllabus document effective from the 2017–2018 session. National University lists the 2017–2018 CSE (Honours) syllabus in its [official syllabus archive](https://www.nu.ac.bd/syllabus-professionals.php). This does not establish that the same syllabus applies to every later admission session.
 
-1. Start with the relevant subject and chapter.
-2. Learn the standard definition, understand the concept, and practise exam-style questions.
-3. Work through examples, formulas and code traces.
-4. Attempt practice questions without looking at the answers first.
-5. Keep a separate list of mistakes and revise it regularly.
-
-## Academic reference note
-
-The complete syllabus reference used for the programme overview is the user-supplied PDF titled **“CSE Syllabus – Effective from the Session 2017–2018”**, identifying the National University Department of Computer Science and Engineering and the Four Year B.Sc. Honours Course. The uploaded document contains First Year through Fourth Year and Semesters I–VIII.
-
-National University also lists **“Computer Science and Engineering, CSE (Hon's) Syllabus 2017–2018”** in its official [Syllabus (Professionals) archive](https://www.nu.ac.bd/syllabus-professionals.php). The archive listing supports the existence of the 2017–2018 syllabus reference; it does **not**, by itself, establish that the same syllabus remains applicable to every later admission session.
-
-- **Document basis:** the complete 47-page syllabus PDF supplied for this study resource.
-- **Official archive:** [National University — Syllabus (Professionals)](https://www.nu.ac.bd/syllabus-professionals.php).
-- **Session applicability:** confirm the approved syllabus, course list, marks distribution and examination scope for your own admission batch with your department and the latest NU notices. A later session-specific or revised document takes priority.
-
-The notes on this website are independent study materials prepared from syllabus references, class materials and standard subject knowledge. They are not official NU publications. The published subject notes currently cover First Semester; listing later-semester courses does not mean detailed notes for every course are already available. Original practice questions are written for revision and are **not** represented as verified NU previous-year questions.
+The detailed notes currently published focus mainly on First Semester. Listing all eight semesters does not mean detailed notes for every course are already available. These are independent study materials, not official NU publications. Newly written exercises are practice questions, not verified previous-year questions. Always confirm your applicable syllabus, course scope and examination instructions with your department and the latest NU notices.
