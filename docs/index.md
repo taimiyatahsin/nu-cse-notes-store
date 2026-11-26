@@ -33,9 +33,33 @@ A student-friendly academic resource hub for clear notes, practical programming,
 
 -   :material-file-check: **Notice Search & Authenticity Check**
 
-    Search the notice title or keywords on NU's official website and compare the published title/date before trusting a shared PDF or screenshot.
+    Search official NU notices and compare the published title, date and document details before trusting a forwarded PDF or screenshot.
 
-    [Search Official NU Notices](https://www.nu.ac.bd/find_web.php){ target="_blank" rel="noopener" }
+    [Open Official Notice & Instruction Board](https://newsite.nu.ac.bd/noticeinstruction.php){ target="_blank" rel="noopener" }
+
+-   :material-calendar-clock: **Exam Routine & Schedule**
+
+    Find examination schedules, routine updates, form-fill-up notices and centre-related announcements.
+
+    [View Official Examination Schedule](https://newsite.nu.ac.bd/examination-schedule.php){ target="_blank" rel="noopener" }
+
+-   :material-card-account-details: **Admit Card Portal**
+
+    Open the official NU admit-card portal for admit card and examinee-sheet services. Some downloads are handled through colleges.
+
+    [Open Admit Card Portal](https://www.nu.ac.bd/admit/){ target="_blank" rel="noopener" }
+
+-   :material-shield-check: **Certificate & Marksheet Verification**
+
+    Use NU's official online-services directory to locate verification services for certificates, marksheets and WES-related documents.
+
+    [Open NU Online Services](https://newsite.nu.ac.bd/?lang=en){ target="_blank" rel="noopener" }
+
+-   :material-account-school: **Student Services & Academic Applications**
+
+    Find official student login, academic applications, form fill-up and related university services.
+
+    [Open NU Student Services Directory](https://newsite.nu.ac.bd/?lang=en){ target="_blank" rel="noopener" }
 
 -   :material-archive-check: **NU Notice & Instruction Archive**
 
