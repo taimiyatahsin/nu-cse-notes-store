@@ -9,7 +9,7 @@ theme:
   language: en
   palette:
     - scheme: default
-      primary: indigo
+      primary: deep purple
       accent: cyan
       toggle:
         icon: material/brightness-7
