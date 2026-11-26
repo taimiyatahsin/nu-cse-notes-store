@@ -1,5 +1,5 @@
 site_name: NU CSE Notes Store
-site_description: Free CSE notes, programming practice and university examination preparation resources.
+site_description: Student-friendly CSE notes, syllabus references, programming practice and academic tools for National University students in Bangladesh.
 site_url: https://taimiyatahsin.github.io/nu-cse-notes-store/
 repo_url: https://github.com/taimiyatahsin/nu-cse-notes-store
 repo_name: taimiyatahsin/nu-cse-notes-store
@@ -9,14 +9,14 @@ theme:
   language: en
   palette:
     - scheme: default
-      primary: green
-      accent: light green
+      primary: indigo
+      accent: cyan
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: green
-      accent: light green
+      primary: indigo
+      accent: cyan
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -30,6 +30,7 @@ theme:
     - search.highlight
     - search.share
     - content.code.copy
+    - content.tabs.link
 
 nav:
   - Home: index.md
@@ -79,87 +80,6 @@ extra_javascript:
 
 extra_css:
   - stylesheets/extra-green.css
+  - stylesheets/premium-academic.css
 
-copyright: NU CSE Notes Store
-site_name: NU CSE Notes Store
-site_description: Free CSE notes, programming practice and university examination preparation resources.
-site_url: https://taimiyatahsin.github.io/nu-cse-notes-store/
-repo_url: https://github.com/taimiyatahsin/nu-cse-notes-store
-repo_name: taimiyatahsin/nu-cse-notes-store
-
-theme:
-  name: material
-  language: en
-  palette:
-    - scheme: default
-      primary: green
-      accent: light green
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: green
-      accent: light green
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.top
-    - navigation.footer
-    - toc.follow
-    - search.suggest
-    - search.highlight
-    - search.share
-    - content.code.copy
-
-nav:
-  - Home: index.md
-  - Academic Syllabus:
-      - Syllabus Overview: syllabus/index.md
-  - Student Tools:
-      - CGPA Calculator: tools/cgpa-calculator.md
-      - Grade Scale: tools/grade-scale.md
-      - Programming Hub: tools/programming-hub.md
-      - PYQ Library: tools/pyq-library.md
-      - Smart Notes Library: tools/notes-library.md
-      - All PDFs Library: tools/pdf-library.md
-      - Formula Sheets: tools/formula-sheets.md
-      - My Library & Bookmarks: tools/bookmarks.md
-      - Offline Access & Install: offline.md
-  - First Semester:
-      - SPL (510201):
-          - Subject Overview: subjects/spl/index.md
-          - Exam Revision Guide: subjects/spl/exam-revision-guide.md
-      - SPL Lab (510202): subjects/spl-lab/index.md
-      - EEC (510203): subjects/eec/index.md
-      - EEC Lab (510204): subjects/eec-lab/index.md
-      - Calculus (510205):
-          - Subject Overview: subjects/cal/index.md
-          - Exam Revision Guide: subjects/cal/exam-revision-guide.md
-      - Physics (510207): subjects/phy/index.md
-      - English (510209): subjects/eng/index.md
-
-markdown_extensions:
-  - attr_list
-  - md_in_html
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
-extra_javascript:
-  - javascripts/cgpa-calculator.js
-  - javascripts/cgpa-advanced.js
-  - javascripts/mathjax.js
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-
-extra_css:
-  - stylesheets/extra-green.css
-
-copyright: NU CSE Notes Store
+copyright: NU CSE Notes Store · Independent student learning resource
