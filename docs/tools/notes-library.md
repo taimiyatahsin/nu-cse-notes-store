@@ -6,6 +6,8 @@ description: "Browse and search the NU CSE Notes Store by subject, semester, top
 
 Find study notes, chapter guides, laboratory materials and revision resources in one place. Use the filters below to narrow the library, or use the site-wide search to search the full text of every published page.
 
+[← First Semester Subject Overview](../subjects/semester-1/index.md){ .md-button }
+
 <div class="library-controls">
   <label for="library-search"><strong>Search the library</strong></label>
   <input id="library-search" type="search" placeholder="Search subjects, topics, course codes..." autocomplete="off">
