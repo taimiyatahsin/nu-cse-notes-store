@@ -15,7 +15,7 @@ Your bookmarks and preferences are stored locally in this browser. They are not 
 
 <div class="personal-library-panel">
   <h2>Backup and restore</h2>
-  <p>Export a JSON backup to keep a copy of your saved CGPA results, bookmarks and site preferences. Store the file somewhere safe. Importing a backup replaces the matching local app data in this browser.</p>
+  <p>Export a JSON backup to keep a copy of your saved CGPA results, bookmarks, study progress, recent pages and site preferences. Store the file somewhere safe. Importing a backup replaces the matching local app data in this browser.</p>
   <div class="library-action-row">
     <button type="button" class="md-button md-button--primary" id="site-export-data">Export my data</button>
     <label class="md-button" for="site-import-data">Import backup</label>
