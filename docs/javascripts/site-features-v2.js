@@ -116,7 +116,7 @@
   function setupPWA(){
     const m=document.createElement("link");m.rel="manifest";m.href=new URL("manifest.webmanifest",BASE).href;document.head.appendChild(m);
     const icon=document.createElement("link");icon.rel="icon";icon.type="image/svg+xml";icon.href=new URL("assets/icons/app-icon.svg",BASE).href;document.head.appendChild(icon);
-    const color=document.createElement("meta");color.name="theme-color";color.content="#173f35";document.head.appendChild(color);
+    const color=document.createElement("meta");color.name="theme-color";color.content="#14233b";document.head.appendChild(color);
     if("serviceWorker"in navigator&&location.protocol==="https:")navigator.serviceWorker.register(new URL("service-worker.js",BASE).href,{scope:BASE.pathname}).catch(()=>{});
     const install=$("#site-install-app");window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();window.__nuCseInstallPrompt=e;if(install)install.hidden=false;});
     install?.addEventListener("click",async()=>{const p=window.__nuCseInstallPrompt;if(!p)return;p.prompt();await p.userChoice;window.__nuCseInstallPrompt=null;install.hidden=true;});
