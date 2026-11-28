@@ -24,6 +24,6 @@ NU CSE Notes Store supports installation as a Progressive Web App (PWA) on compa
 - Offline access is not guaranteed for a page that has never been opened online.
 - PDF files and large resources may need to be opened once online before they are available offline.
 - Browser storage can be cleared automatically when device storage is low.
-- Local bookmarks and calculator data stay on this device and are not cloud-synchronised.
+- Local bookmarks, calculator data and study progress stay on this device and are not cloud-synchronised. Export a backup before switching devices.
 
-[Open the Smart Notes Library](tools/notes-library.md) · [Open Formula Sheets](tools/formula-sheets.md)
+[Open the Smart Notes Library](tools/notes-library.md) · [Open Formula Sheets](tools/formula-sheets.md) · [Open Study Dashboard](tools/study-dashboard.md)
