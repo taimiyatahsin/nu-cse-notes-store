@@ -36,6 +36,14 @@
       return true;
     };
 
+    // Give every grade control a course-specific accessible name for screen readers.
+    $(".cgpa-course-row").forEach(row=>{
+      const name=fieldValue($(".cgpa-course-name",row))||"this course";
+      const original=$(".cgpa-grade",row),retake=$(".cgpa-retake-grade",row);
+      if(original)original.setAttribute("aria-label","Original grade for "+name);
+      if(retake)retake.setAttribute("aria-label","Retake or improvement grade for "+name);
+    });
+
     function readSemester(semester) {
       const body=$('[data-rows="'+semester+'"]');
       const rows=$$(".cgpa-course-row",body);
@@ -95,7 +103,8 @@
       const draft=state.drafts[semester];
       if(!Array.isArray(draft))return false;
       const body=$('[data-rows="'+semester+'"]');
-      const byName=new Map(draft.map(course=>[course.name,course]));
+      // Ignore malformed entries so a damaged or hand-edited backup cannot break the calculator.
+      const byName=new Map(draft.filter(course=>course&&typeof course==="object"&&typeof course.name==="string").map(course=>[course.name,course]));
       $$(".cgpa-course-row",body).forEach(row=>{
         const saved=byName.get(fieldValue($(".cgpa-course-name",row)));
         $(".cgpa-grade",row).value=saved?(saved.originalGrade||""):"";
