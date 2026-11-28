@@ -552,26 +552,11 @@
   background:var(--cream); color:var(--md-default-fg-color); cursor:pointer;
 }
 .study-empty { color:var(--muted); padding:.5rem 0; }
-.study-mark-complete {
-  display:inline-flex; align-items:center; gap:.4rem; margin:.35rem 0 1rem;
-  min-height:40px; padding:.5rem .85rem; border:1px solid var(--md-accent-fg-color);
-  border-radius:10px; background:var(--paper); color:var(--md-default-fg-color);
-  font:inherit; font-size:.85rem; font-weight:750; cursor:pointer;
-}
-.study-mark-complete.is-complete {
-  color:#146c43; border-color:#69b991; background:rgba(105,185,145,.12);
-}
-.study-mark-complete:focus-visible, .study-list-row button:focus-visible {
-  outline:3px solid #55b8ca; outline-offset:3px;
-}
 @media(max-width:520px) {
   .study-dashboard-stats { gap:.45rem; }
   .study-stat { padding:.7rem; border-radius:11px; }
   .study-stat strong { font-size:1.35rem; }
   .study-stat span { font-size:.72rem; }
-}
-@media(prefers-reduced-motion:reduce) {
-  .study-mark-complete { transition:none; }
 }
 
 
