@@ -24,9 +24,9 @@ A simple personal study space for tracking the pages you have finished and quick
 
 ## How progress works
 
-- Open any subject or chapter page and use **Mark this page complete** near the top.
-- Return here anytime to see completed pages and recently visited pages.
-- Your progress is saved in this browser on this device. It does not sync automatically across devices or browsers.
-- Clearing this browser's site data may erase this local progress.
+- Recently opened pages are collected automatically as you browse the portal.
+- Completed-page records already saved in this browser remain visible here.
+- Your recent-page history and saved progress stay in this browser on this device; they do not sync automatically across devices or browsers.
+- Clearing this browser's site data may erase this local data.
 
 [Browse all first-semester subjects](../subjects/semester-1/index.md){ .md-button .md-button--primary } [Open the full PDF library](pdf-library.md){ .md-button }
