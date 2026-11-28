@@ -159,6 +159,16 @@ A student-friendly academic resource hub for clear notes, practical programming,
 
 </div>
 
+## Contact & feedback
+
+<div class="portal-note" markdown>
+Have an idea to improve the website, found a bug, or need a study PDF or other learning resource? Feel free to email me with your suggestions, feedback, corrections, or requests.
+
+[Send an Email](mailto:taimiyatahsin1@gmail.com?subject=NU%20CSE%20Notes%20Store%20-%20Feedback%20or%20Study%20Resource%20Request){ .md-button .md-button--primary }
+
+[View contact details](contact.md)
+</div>
+
 ## The CSE programme at a glance
 
 | Year | Semester | Credits in the supplied syllabus |
