@@ -19,7 +19,7 @@
   async function loadSearchDocuments(){
     if(searchDocuments)return searchDocuments;
     try{const response=await fetch(new URL("search/search_index.json",BASE));if(!response.ok)throw new Error("Search index unavailable");const data=await response.json();searchDocuments=Array.isArray(data.docs)?data.docs:[];}
-    catch(_){searchDocuments=[];}
+    catch(_){searchDocuments=null;return [];}
     return searchDocuments;
   }
   function createPalette(){
@@ -54,11 +54,14 @@
     if(request!==paletteRequest||!target.isConnected)return;
     const matches=[];
     docs.forEach(doc=>{
-      const title=String(doc.title||"Untitled"),text=String(doc.text||""),hay=(title+" "+text).toLowerCase();
-      if(tokens.every(token=>hay.includes(token))){let score=tokens.reduce((n,t)=>n+(title.toLowerCase().includes(t)?5:0),0);matches.push({title,text,location:doc.location||"",score});}
+      if(!doc||typeof doc!=="object")return;
+      const title=String(doc.title||"Untitled"),text=String(doc.text||""),url=safeURL(doc.location||"");
+      if(!url)return;
+      const hay=(title+" "+text).toLowerCase();
+      if(tokens.every(token=>hay.includes(token))){let score=tokens.reduce((n,t)=>n+(title.toLowerCase().includes(t)?5:0),0);matches.push({title,text,url,score});}
     });
     matches.sort((a,b)=>b.score-a.score);
-    matches.slice(0,10).forEach(doc=>{const snippet=doc.text.replace(/\s+/g," ").trim().slice(0,150);addPaletteResult(target,doc.title,snippet,new URL(doc.location,BASE).href,"Page");});
+    matches.slice(0,10).forEach(doc=>{const snippet=doc.text.replace(/\\s+/g," ").trim().slice(0,150);addPaletteResult(target,doc.title,snippet,doc.url,"Page");});
     bookmarks().filter(item=>(item.title+" "+item.url).toLowerCase().includes(q)).slice(0,5).forEach(item=>addPaletteResult(target,item.title||"Saved page","Your local bookmark",item.url,"Bookmark"));
     if(!target.children.length){const empty=document.createElement("p");empty.className="site-command-empty";empty.textContent="No matching pages or bookmarks. Try another keyword.";target.appendChild(empty);}
   }
