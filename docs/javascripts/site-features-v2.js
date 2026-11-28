@@ -1,7 +1,7 @@
 (() => {
   "use strict";
-  const BASE=new URL("/nu-cse-notes-store/",location.origin), BOOKMARK_KEY="nuCseSiteBookmarksV1", RECENT_KEY="nuCseRecentSearchesV1";
-  const BACKUP_KEYS=["nuCseSemesterCgpaV2",BOOKMARK_KEY,RECENT_KEY,"__palette"];
+  const BASE=new URL("/nu-cse-notes-store/",location.origin), BOOKMARK_KEY="nuCseSiteBookmarksV1", RECENT_KEY="nuCseRecentSearchesV1", STUDY_RECENT_KEY="nuCseRecentPagesV1", STUDY_DONE_KEY="nuCseStudyProgressV1";
+  const BACKUP_KEYS=["nuCseSemesterCgpaV2",BOOKMARK_KEY,RECENT_KEY,STUDY_RECENT_KEY,STUDY_DONE_KEY,"__palette"];
   const $=(s,r=document)=>r.querySelector(s);
   const read=(k,d)=>{try{return JSON.parse(localStorage.getItem(k)||"null")??d;}catch(_){return d;}};
   const write=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));return true;}catch(_){return false;}};
@@ -45,7 +45,7 @@
     const target=$("#site-command-results");if(!target)return;target.replaceChildren();
     const q=(query||"").trim().toLowerCase();
     if(!q){
-      [["CGPA Calculator","Academic tool","tools/cgpa-calculator/"],["Smart Notes Library","Browse subject notes","tools/notes-library/"],["Formula Sheets","Calculus, Physics and EEC formulas","tools/formula-sheets/"],["My Library","Bookmarks and backup","tools/bookmarks/"]].forEach(x=>addPaletteResult(target,x[0],x[1],new URL(x[2],BASE).href,"Quick link"));
+      [["CGPA Calculator","Academic tool","tools/cgpa-calculator/"],["Smart Notes Library","Browse subject notes","tools/notes-library/"],["My Study Dashboard","Completed pages and recent activity","tools/study-dashboard/"],["Formula Sheets","Calculus, Physics and EEC formulas","tools/formula-sheets/"],["My Library","Bookmarks and backup","tools/bookmarks/"]].forEach(x=>addPaletteResult(target,x[0],x[1],new URL(x[2],BASE).href,"Quick link"));
       const recent=read(RECENT_KEY,[]);if(Array.isArray(recent)&&recent.length){const label=document.createElement("p");label.className="site-command-section-label";label.textContent="Recent searches";target.appendChild(label);recent.slice(0,5).forEach(term=>{const b=document.createElement("button");b.type="button";b.className="site-command-recent";b.textContent=term;b.addEventListener("click",()=>{$("#site-command-input").value=term;renderPaletteResults(term);});target.appendChild(b);});}
       return;
     }
@@ -100,6 +100,8 @@
           for(const part of ["saved","drafts","quick"])if(parsed[part]!==undefined&&(!parsed[part]||typeof parsed[part]!=="object"||Array.isArray(parsed[part])))throw new Error("Invalid CGPA "+part+" data.");
         }else if(key===BOOKMARK_KEY){
           if(!Array.isArray(parsed)||parsed.some(item=>!item||typeof item!=="object"||typeof item.url!=="string"||!safeURL(item.url)||(item.title!==undefined&&typeof item.title!=="string")))throw new Error("Invalid bookmark data.");
+        }else if(key==="nuCseRecentPagesV1"||key==="nuCseStudyProgressV1"){
+          if(!Array.isArray(parsed)||parsed.length>500||parsed.some(item=>!item||typeof item!=="object"||typeof item.url!=="string"||!safeURL(item.url)||(item.title!==undefined&&typeof item.title!=="string")))throw new Error("Invalid study history or progress data.");
         }else if(key===RECENT_KEY){
           if(!Array.isArray(parsed)||parsed.some(term=>typeof term!=="string"||term.length>200))throw new Error("Invalid recent-search data.");
         }
