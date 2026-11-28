@@ -29,7 +29,7 @@
   }
   function addNavigation() {
     const content = document.querySelector(".md-content");
-    if (!content || document.querySelector("#site-page-navigation")) return;
+    if (!content || document.querySelector("#site-page-navigation") || document.querySelector("#site-subject-navigation")) return;
     // Replace the older subject-only Back control with one consistent control.
     document.querySelector("#site-chapter-back")?.remove();
     const nav = document.createElement("nav");
