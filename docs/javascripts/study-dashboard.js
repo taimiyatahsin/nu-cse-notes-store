@@ -20,25 +20,7 @@
     const items = completed().filter(x => x.url !== url);
     if (done) items.unshift({ url, title, completedAt: new Date().toISOString() });
     write(DONE, items.slice(0, 500));
-    updateCompleteButton();
     renderDashboard();
-  }
-  function updateCompleteButton() {
-    const button = $("#study-mark-complete"); if (!button) return;
-    const current = page(), isDone = completed().some(x => x.url === current.url);
-    button.textContent = isDone ? "✓ Completed — undo" : "＋ Mark this page complete";
-    button.setAttribute("aria-pressed", String(isDone));
-    button.classList.toggle("is-complete", isDone);
-  }
-  function addCompleteButton() {
-    const content = $(".md-content"), title = $(".md-content h1");
-    if (!content || !title || location.pathname.includes("/tools/study-dashboard/") || $("#study-mark-complete")) return;
-    const button = document.createElement("button");
-    button.type = "button"; button.id = "study-mark-complete"; button.className = "study-mark-complete";
-    button.addEventListener("click", () => { const p = page(), done = !completed().some(x => x.url === p.url); setCompleted(p.url, p.title, done); });
-    const nav = content.querySelector("#site-subject-navigation, #site-page-navigation");
-    (nav || title).insertAdjacentElement("afterend", button);
-    updateCompleteButton();
   }
   function linkList(target, items, emptyText, actionLabel) {
     if (!target) return;
@@ -69,14 +51,14 @@
     if (!$("#study-recent-pages")) return;
     const recent = read(RECENT).filter(x => x && safe(x.url)), done = completed();
     linkList($("#study-recent-pages"), recent, "Your visited pages will appear here as you browse the portal.");
-    linkList($("#study-completed-pages"), done, "No completed pages yet. Open a subject or chapter and mark it complete.", "Undo");
+    linkList($("#study-completed-pages"), done, "No completed pages have been saved in this browser yet.", "Remove");
     const count = $("#study-completed-count"); if (count) count.textContent = String(done.length);
     const recentCount = $("#study-recent-count"); if (recentCount) recentCount.textContent = String(recent.length);
-    const progress = $("#study-progress-note"); if (progress) progress.textContent = done.length ? done.length + " page" + (done.length === 1 ? "" : "s") + " completed on this browser." : "Start by opening a subject page and marking it complete.";
+    const progress = $("#study-progress-note"); if (progress) progress.textContent = done.length ? done.length + " page" + (done.length === 1 ? "" : "s") + " saved as completed on this browser." : "Your saved study progress will appear here.";
     pdfCount();
   }
   function init() {
-    rememberVisit(); addCompleteButton(); renderDashboard();
+    rememberVisit(); renderDashboard();
     window.addEventListener("storage", renderDashboard);
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
