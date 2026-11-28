@@ -15,7 +15,7 @@
     if(count)count.textContent=String(items.length);if(text)text.textContent=items.length+" saved page"+(items.length===1?"":"s");
     if(list){list.replaceChildren();items.forEach(item=>{const row=document.createElement("div");row.className="site-bookmark-item";const a=document.createElement("a");a.href=safeURL(item.url)||BASE.href;a.textContent=item.title||"Saved page";const b=document.createElement("button");b.type="button";b.textContent="Remove";b.addEventListener("click",()=>setBookmarks(bookmarks().filter(x=>x.url!==item.url)));row.append(a,b);list.appendChild(row);});}
   }
-  let searchDocuments=null;
+  let searchDocuments=null, paletteRequest=0;
   async function loadSearchDocuments(){
     if(searchDocuments)return searchDocuments;
     try{const response=await fetch(new URL("search/search_index.json",BASE));if(!response.ok)throw new Error("Search index unavailable");const data=await response.json();searchDocuments=Array.isArray(data.docs)?data.docs:[];}
@@ -25,7 +25,7 @@
   function createPalette(){
     if($("#site-command-palette"))return;
     const dialog=document.createElement("dialog");dialog.id="site-command-palette";dialog.className="site-command-palette";
-    dialog.innerHTML='<div class="site-command-heading"><strong>Search NU CSE Notes Store</strong><button type="button" id="site-command-close" aria-label="Close search">×</button></div><input id="site-command-input" type="search" placeholder="Search notes, formulas, courses, tools and bookmarks..." autocomplete="off"><p class="site-command-hint">Search every published page and your saved bookmarks.</p><div id="site-command-results" role="listbox"></div>';
+    dialog.innerHTML='<div class="site-command-heading"><strong>Search NU CSE Notes Store</strong><button type="button" id="site-command-close" aria-label="Close search">×</button></div><input id="site-command-input" type="search" aria-label="Search notes, formulas, courses and tools" placeholder="Search notes, formulas, courses, tools and bookmarks..." autocomplete="off"><p class="site-command-hint">Search every published page and your saved bookmarks.</p><div id="site-command-results" role="listbox" aria-label="Search results"></div>';
     document.body.appendChild(dialog);
     const input=$("#site-command-input",dialog);
     input.addEventListener("input",()=>renderPaletteResults(input.value));
@@ -49,7 +49,10 @@
       const recent=read(RECENT_KEY,[]);if(Array.isArray(recent)&&recent.length){const label=document.createElement("p");label.className="site-command-section-label";label.textContent="Recent searches";target.appendChild(label);recent.slice(0,5).forEach(term=>{const b=document.createElement("button");b.type="button";b.className="site-command-recent";b.textContent=term;b.addEventListener("click",()=>{$("#site-command-input").value=term;renderPaletteResults(term);});target.appendChild(b);});}
       return;
     }
-    const tokens=q.split(/\s+/).filter(Boolean),docs=await loadSearchDocuments(),matches=[];
+    const request=++paletteRequest;
+    const tokens=q.split(/\s+/).filter(Boolean),docs=await loadSearchDocuments();
+    if(request!==paletteRequest||!target.isConnected)return;
+    const matches=[];
     docs.forEach(doc=>{
       const title=String(doc.title||"Untitled"),text=String(doc.text||""),hay=(title+" "+text).toLowerCase();
       if(tokens.every(token=>hay.includes(token))){let score=tokens.reduce((n,t)=>n+(title.toLowerCase().includes(t)?5:0),0);matches.push({title,text,location:doc.location||"",score});}
@@ -131,10 +134,13 @@
   function setupPWA(){
     const m=document.createElement("link");m.rel="manifest";m.href=new URL("manifest.webmanifest",BASE).href;document.head.appendChild(m);
     const icon=document.createElement("link");icon.rel="icon";icon.type="image/svg+xml";icon.href=new URL("assets/icons/app-icon.svg",BASE).href;document.head.appendChild(icon);
-    const color=document.createElement("meta");color.name="theme-color";color.content="#14233b";document.head.appendChild(color);
+    let color=document.querySelector('meta[name="theme-color"]');if(!color){color=document.createElement("meta");color.name="theme-color";document.head.appendChild(color);}
+    const syncThemeColor=()=>{color.content=document.documentElement.getAttribute("data-md-color-scheme")==="slate"?"#101a2b":"#f6f7ff";};
+    syncThemeColor();
+    new MutationObserver(syncThemeColor).observe(document.documentElement,{attributes:true,attributeFilter:["data-md-color-scheme"]});
     if("serviceWorker"in navigator&&location.protocol==="https:")navigator.serviceWorker.register(new URL("service-worker.js",BASE).href,{scope:BASE.pathname}).catch(()=>{});
     const install=$("#site-install-app");window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();window.__nuCseInstallPrompt=e;if(install)install.hidden=false;});
-    install?.addEventListener("click",async()=>{const p=window.__nuCseInstallPrompt;if(!p)return;p.prompt();await p.userChoice;window.__nuCseInstallPrompt=null;install.hidden=true;});
+    install?.addEventListener("click",async()=>{const p=window.__nuCseInstallPrompt;if(!p)return;install.disabled=true;try{await p.prompt();await p.userChoice;}catch(_){}finally{window.__nuCseInstallPrompt=null;install.hidden=true;install.disabled=false;}});
     window.addEventListener("appinstalled",()=>{if(install)install.hidden=true;});
   }
   function setupShortcuts(){
