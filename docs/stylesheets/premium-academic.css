@@ -573,3 +573,127 @@
 @media(prefers-reduced-motion:reduce) {
   .study-mark-complete { transition:none; }
 }
+
+
+/* Final polish — consistent surfaces, responsive spacing and accessible controls */
+:root {
+  --portal-radius: 16px;
+  --portal-shadow: 0 8px 26px rgba(42, 49, 110, .075);
+  --portal-shadow-hover: 0 14px 34px rgba(42, 49, 110, .13);
+}
+.md-container { background: var(--md-default-bg-color); }
+.md-content__inner { max-width: 100%; }
+.md-typeset { overflow-wrap: break-word; }
+.md-typeset img, .md-typeset video, .md-typeset iframe { max-width: 100%; }
+.md-typeset .portal-hero {
+  border-radius: 24px;
+  padding: clamp(1.4rem, 4vw, 2.8rem);
+}
+.md-typeset .portal-hero p:last-child { margin-bottom: 0; }
+.md-typeset .grid.cards > ul {
+  gap: .9rem;
+}
+.md-typeset .grid.cards > ul > li {
+  border-radius: var(--portal-radius);
+  box-shadow: var(--portal-shadow);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.md-typeset .grid.cards > ul > li:focus-within {
+  border-color: var(--aurora-violet);
+  box-shadow: 0 0 0 3px rgba(118,100,232,.13), var(--portal-shadow);
+}
+.md-typeset .md-button, .md-typeset a.md-button {
+  min-height: 42px;
+  border-radius: 11px;
+  font-weight: 700;
+}
+.md-typeset input:not([type=checkbox]):not([type=radio]),
+.md-typeset select, .md-typeset textarea {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.md-typeset table:not([class]) {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding: .7rem .85rem;
+}
+.md-typeset blockquote {
+  border-radius: 0 13px 13px 0;
+}
+.md-typeset .admonition, .md-typeset details {
+  border-radius: 14px;
+}
+.site-subject-navigation, .site-page-navigation {
+  gap: .55rem;
+}
+.site-subject-navigation .md-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.study-dashboard-stats { gap: .75rem; }
+.study-stat, .study-dashboard-card, .study-dashboard-panel {
+  border-radius: 15px;
+  box-shadow: var(--portal-shadow);
+}
+.cgpa-panel, .cgpa-result-card, .cgpa-advanced-panel,
+.cgpa-semester-panel, .cgpa-overall-card {
+  border-radius: 15px;
+  box-shadow: var(--portal-shadow);
+}
+.cgpa-result-card strong, .cgpa-semester-summary strong,
+.cgpa-overall-card strong, .cgpa-sim-results strong {
+  font-variant-numeric: tabular-nums;
+}
+.site-utility {
+  right: max(.8rem, env(safe-area-inset-right));
+  bottom: max(.8rem, env(safe-area-inset-bottom));
+  gap: .5rem;
+}
+.site-utility-button {
+  min-height: 42px;
+  padding: .58rem .9rem;
+  backdrop-filter: blur(14px);
+}
+.site-utility-panel {
+  max-height: min(60vh, 520px);
+  overscroll-behavior: contain;
+}
+:where(button, a, input, select, textarea, summary):focus-visible {
+  outline: 3px solid var(--aurora-cyan);
+  outline-offset: 3px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .md-typeset .grid.cards > ul > li:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--portal-shadow-hover);
+  }
+}
+@media (max-width: 700px) {
+  .md-content__inner { padding-inline: .7rem; }
+  .md-typeset { font-size: .78rem; line-height: 1.72; }
+  .md-typeset h1 { font-size: clamp(1.55rem, 7vw, 2rem); }
+  .md-typeset h2 { font-size: 1.25rem; }
+  .md-typeset .portal-hero { border-radius: 18px; }
+  .md-typeset .grid.cards > ul { gap: .65rem; }
+  .study-dashboard-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .site-utility { left: .65rem; right: .65rem; bottom: max(.65rem, env(safe-area-inset-bottom)); }
+  .site-utility-button { flex: 0 1 auto; font-size: .76rem; }
+  .site-utility-panel { right: 0; width: min(360px, calc(100vw - 1.3rem)); }
+  .md-typeset table:not([class]) { font-size: .76rem; }
+}
+@media (max-width: 380px) {
+  .site-utility { justify-content: center; }
+  .site-utility-button { padding: .5rem .65rem; font-size: .72rem; }
+  .study-dashboard-stats { grid-template-columns: 1fr 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .grid.cards > ul > li,
+  .md-typeset .md-button, .site-utility-button {
+    transition: none !important;
+    animation: none !important;
+  }
+}
