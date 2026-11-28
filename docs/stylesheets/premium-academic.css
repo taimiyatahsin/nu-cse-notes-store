@@ -524,3 +524,52 @@
   .site-subject-navigation { gap:.4rem; padding:.6rem; }
   .site-subject-navigation .md-button { flex:1 1 auto; text-align:center; }
 }
+
+
+/* Personal study dashboard */
+.study-dashboard-stats {
+  display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.8rem;
+  margin:1rem 0; 
+}
+.study-stat {
+  display:flex; flex-direction:column; gap:.25rem; min-width:0;
+  padding:1rem; border:1px solid var(--line); border-radius:14px;
+  background:var(--paper); box-shadow:0 5px 18px rgba(47,52,120,.055);
+}
+.study-stat strong { font-size:1.65rem; line-height:1.2; color:var(--forest-dark); }
+.study-stat span { color:var(--muted); font-size:.82rem; font-weight:650; }
+.study-progress-note { color:var(--muted); font-size:.9rem; }
+.study-dashboard-list { display:grid; gap:.55rem; margin:1rem 0 1.5rem; }
+.study-list-row {
+  display:flex; align-items:center; flex-wrap:wrap; gap:.5rem;
+  padding:.75rem .85rem; border:1px solid var(--line); border-radius:11px;
+  background:var(--paper);
+}
+.study-list-row a { flex:1 1 12rem; min-width:0; }
+.study-list-row small { color:var(--muted); font-size:.75rem; }
+.study-list-row button {
+  border:1px solid var(--line); border-radius:8px; padding:.35rem .65rem;
+  background:var(--cream); color:var(--md-default-fg-color); cursor:pointer;
+}
+.study-empty { color:var(--muted); padding:.5rem 0; }
+.study-mark-complete {
+  display:inline-flex; align-items:center; gap:.4rem; margin:.35rem 0 1rem;
+  min-height:40px; padding:.5rem .85rem; border:1px solid var(--md-accent-fg-color);
+  border-radius:10px; background:var(--paper); color:var(--md-default-fg-color);
+  font:inherit; font-size:.85rem; font-weight:750; cursor:pointer;
+}
+.study-mark-complete.is-complete {
+  color:#146c43; border-color:#69b991; background:rgba(105,185,145,.12);
+}
+.study-mark-complete:focus-visible, .study-list-row button:focus-visible {
+  outline:3px solid #55b8ca; outline-offset:3px;
+}
+@media(max-width:520px) {
+  .study-dashboard-stats { gap:.45rem; }
+  .study-stat { padding:.7rem; border-radius:11px; }
+  .study-stat strong { font-size:1.35rem; }
+  .study-stat span { font-size:.72rem; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .study-mark-complete { transition:none; }
+}
