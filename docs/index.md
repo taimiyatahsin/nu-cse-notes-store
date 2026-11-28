@@ -8,6 +8,7 @@
 A student-friendly academic resource hub for clear notes, practical programming, course references and everyday study tools. Find what you need, understand the topic, and prepare with confidence.
 
 [Explore study resources](tools/notes-library.md){ .md-button .md-button--primary }
+[Browse First Semester](subjects/semester-1/index.md){ .md-button }
 [Browse the syllabus](syllabus/index.md){ .md-button }
 </div>
 
@@ -106,7 +107,7 @@ A student-friendly academic resource hub for clear notes, practical programming,
 
     Chapter-wise learning materials, definitions, formulas, solved problems and revision guides for currently published subjects.
 
-    [Open first-semester subjects](subjects/spl/index.md)
+    [Open First Semester Overview](subjects/semester-1/index.md)
 
 -   :material-calculator-variant: **CGPA calculator**
 
