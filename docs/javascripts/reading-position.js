@@ -45,10 +45,8 @@
         history.back();
         return;
       }
-      const relative = location.pathname.startsWith(BASE) ? location.pathname.slice(BASE.length).split("/").filter(Boolean) : [];
-      relative.pop();
-      const parent = BASE + (relative.length ? relative.join("/") + "/" : "");
-      location.assign(parent);
+      // A guessed parent path may not be a published MkDocs page; Home is always valid.
+      location.assign(BASE);
     });
     const home = document.createElement("a");
     home.className = "site-page-home";
