@@ -130,20 +130,30 @@
   function init(){createUtility();renderBookmarksPage();setupLibrary();setupBackup();setupPWA();setupShortcuts();loadSearchDocuments();addChapterBackButton();window.addEventListener("storage",()=>{updateBookmarks();renderBookmarksPage();});}
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();  function addChapterBackButton(){
     const content=$(".md-content");
-    if(!content||!location.pathname.includes("/subjects/")||$("#site-chapter-back"))return;
-    const button=document.createElement("button");
-    button.type="button";
-    button.id="site-chapter-back";
-    button.className="md-button md-button--primary";
-    button.textContent="Back";
-    button.addEventListener("click",()=>{
-            const previous=safeURL(document.referrer);
-      if(previous&&!/[.](?:css|js|json|svg|png|jpe?g|webp|ico)$/i.test(new URL(previous).pathname)){history.back();return;}
-      const parts=location.pathname.slice(BASE.pathname.length).split("/").filter(Boolean);
-      parts.pop();
-      location.assign(new URL(parts.length?parts.join("/")+"/":"",BASE));
-    });
-    content.insertBefore(button,content.firstChild);
+    const path=location.pathname;
+    if(!content||!path.includes("/subjects/")||$("#site-subject-navigation"))return;
+    const nav=document.createElement("nav");
+    nav.id="site-subject-navigation";
+    nav.className="site-subject-navigation";
+    nav.setAttribute("aria-label","Subject navigation");
+    const overview=document.createElement("a");
+    overview.href=new URL("subjects/semester-1/",BASE).href;
+    overview.className="md-button md-button--primary";
+    overview.textContent="← First Semester Overview";
+    nav.appendChild(overview);
+    if(!path.includes("/subjects/semester-1/")){
+      const back=document.createElement("button");
+      back.type="button";
+      back.className="md-button";
+      back.textContent="Go Back";
+      back.addEventListener("click",()=>{
+        const previous=safeURL(document.referrer);
+        if(previous&&!/[.](?:css|js|json|svg|png|jpe?g|webp|ico)$/i.test(new URL(previous).pathname)){history.back();return;}
+        location.assign(overview.href);
+      });
+      nav.appendChild(back);
+    }
+    content.insertBefore(nav,content.firstChild);
   }
   addChapterBackButton();
 
