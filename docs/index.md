@@ -145,6 +145,12 @@ A student-friendly academic resource hub for clear notes, practical programming,
 
     [Open my library](tools/bookmarks.md)
 
+-   :material-chart-box-outline: **My Study Dashboard**
+
+    Track completed study pages, revisit recent pages and see the available PDF collection.
+
+    [Open study dashboard](tools/study-dashboard.md)
+
 -   :material-cellphone-arrow-down: **Study offline**
 
     Learn how to install the site and prepare pages for offline reading on supported browsers.
