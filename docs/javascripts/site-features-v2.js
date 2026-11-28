@@ -43,13 +43,13 @@
   }
   async function renderPaletteResults(query){
     const target=$("#site-command-results");if(!target)return;target.replaceChildren();
+    const request=++paletteRequest;
     const q=(query||"").trim().toLowerCase();
     if(!q){
       [["CGPA Calculator","Academic tool","tools/cgpa-calculator/"],["Smart Notes Library","Browse subject notes","tools/notes-library/"],["My Study Dashboard","Completed pages and recent activity","tools/study-dashboard/"],["Formula Sheets","Calculus, Physics and EEC formulas","tools/formula-sheets/"],["My Library","Bookmarks and backup","tools/bookmarks/"]].forEach(x=>addPaletteResult(target,x[0],x[1],new URL(x[2],BASE).href,"Quick link"));
       const recent=read(RECENT_KEY,[]);if(Array.isArray(recent)&&recent.length){const label=document.createElement("p");label.className="site-command-section-label";label.textContent="Recent searches";target.appendChild(label);recent.slice(0,5).forEach(term=>{const b=document.createElement("button");b.type="button";b.className="site-command-recent";b.textContent=term;b.addEventListener("click",()=>{$("#site-command-input").value=term;renderPaletteResults(term);});target.appendChild(b);});}
       return;
     }
-    const request=++paletteRequest;
     const tokens=q.split(/\s+/).filter(Boolean),docs=await loadSearchDocuments();
     if(request!==paletteRequest||!target.isConnected)return;
     const matches=[];
