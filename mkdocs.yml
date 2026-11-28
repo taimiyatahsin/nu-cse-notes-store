@@ -47,6 +47,7 @@ nav:
       - My Library & Bookmarks: tools/bookmarks.md
       - Offline Access & Install: offline.md
   - First Semester:
+      - Semester Overview: subjects/semester-1/index.md
       - SPL (510201):
           - Subject Overview: subjects/spl/index.md
           - Exam Revision Guide: subjects/spl/exam-revision-guide.md
