@@ -79,13 +79,26 @@
     const c=$("#site-bookmark-count"),e=$("#site-bookmark-empty");if(c)c.textContent=items.length+" saved page"+(items.length===1?"":"s");if(e)e.hidden=items.length>0;
   }
   function setupLibrary(){
-    const grid=$("#notes-library-grid");if(!grid)return;const search=$("#library-search"),subject=$("#library-subject"),type=$("#library-type"),count=$("#library-count"),empty=$("#library-empty"),cards=Array.from(grid.querySelectorAll("li"));
-    function apply(){const q=(search.value||"").toLowerCase().trim(),s=subject.value,t=type.value;let visible=0;cards.forEach(card=>{const m=card.querySelector(".library-tags"),hay=(card.textContent+" "+(m?.dataset.search||"")).toLowerCase(),ok=(!q||hay.includes(q))&&(s==="all"||m?.dataset.subject===s)&&(t==="all"||m?.dataset.type?.split(/\s+/).includes(t));card.hidden=!ok;if(ok)visible++;});count.textContent="Showing "+visible+" of "+cards.length+" resources";empty.hidden=visible>0;}
+    const grid=$("#notes-library-grid");if(!grid)return;
+    const search=$("#library-search"),subject=$("#library-subject"),type=$("#library-type"),count=$("#library-count"),empty=$("#library-empty");
+    if(!search||!subject||!type||!count||!empty)return;
+    const cards=Array.from(grid.querySelectorAll("li"));
+    function apply(){
+      const q=(search.value||"").trim().toLocaleLowerCase(),selectedSubject=subject.value,selectedType=type.value;
+      let visible=0;
+      cards.forEach(card=>{
+        const meta=card.querySelector(".library-tags"),hay=(card.textContent+" "+(meta?.dataset.search||"")).toLocaleLowerCase();
+        const matches=(!q||hay.includes(q))&&(selectedSubject==="all"||meta?.dataset.subject===selectedSubject)&&(selectedType==="all"||meta?.dataset.type?.split(/\s+/).includes(selectedType));
+        card.hidden=!matches;if(matches)visible++;
+      });
+      count.textContent="Showing "+visible+" of "+cards.length+" resources";
+      empty.hidden=visible>0;
+    }
     search.addEventListener("input",apply);subject.addEventListener("change",apply);type.addEventListener("change",apply);apply();
   }
   function setupBackup(){
-    const exp=$("#site-export-data"),imp=$("#site-import-data"),status=$("#site-backup-status");if(!exp||!imp)return;
-    exp.addEventListener("click",()=>{try{const data={};BACKUP_KEYS.forEach(k=>{const v=localStorage.getItem(k);if(v!==null)data[k]=v;});const blob=new Blob([JSON.stringify({schemaVersion:1,site:"NU CSE Notes Store",exportedAt:new Date().toISOString(),data},null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="nu-cse-notes-store-backup-"+new Date().toISOString().slice(0,10)+".json";document.body.appendChild(a);a.click();a.remove();window.setTimeout(()=>URL.revokeObjectURL(url),1000);status.textContent="Backup exported. Keep the JSON file somewhere safe.";}catch(e){status.textContent="Could not export backup: "+e.message;}});
+    const exp=$("#site-export-data"),imp=$("#site-import-data"),status=$("#site-backup-status");if(!exp||!imp)return;const report=message=>{if(status)status.textContent=message;};
+    exp.addEventListener("click",()=>{try{const data={};BACKUP_KEYS.forEach(k=>{const v=localStorage.getItem(k);if(v!==null)data[k]=v;});const blob=new Blob([JSON.stringify({schemaVersion:1,site:"NU CSE Notes Store",exportedAt:new Date().toISOString(),data},null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="nu-cse-notes-store-backup-"+new Date().toISOString().slice(0,10)+".json";document.body.appendChild(a);a.click();a.remove();window.setTimeout(()=>URL.revokeObjectURL(url),1000);report("Backup exported. Keep the JSON file somewhere safe.");}catch(e){report("Could not export backup: "+e.message);}});
     imp.addEventListener("change",async()=>{const file=imp.files?.[0];if(!file)return;try{
       if(file.size>2*1024*1024)throw new Error("Backup file is larger than the 2 MB limit.");
       const p=JSON.parse(await file.text());
@@ -112,8 +125,8 @@
       const previous={};BACKUP_KEYS.forEach(k=>previous[k]=localStorage.getItem(k));
       try{Object.entries(incoming).forEach(([k,v])=>localStorage.setItem(k,v));}
       catch(writeError){BACKUP_KEYS.forEach(k=>{if(previous[k]===null)localStorage.removeItem(k);else localStorage.setItem(k,previous[k]);});throw writeError;}
-      status.textContent="Backup imported. Reloading...";location.reload();
-    }catch(e){status.textContent="Could not import backup: "+e.message;}finally{imp.value="";}});
+      report("Backup imported. Reloading...");location.reload();
+    }catch(e){report("Could not import backup: "+e.message);}finally{imp.value="";}});
   }
   function setupPWA(){
     const m=document.createElement("link");m.rel="manifest";m.href=new URL("manifest.webmanifest",BASE).href;document.head.appendChild(m);
